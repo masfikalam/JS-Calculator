@@ -33,7 +33,7 @@ function mainResult() {
     let equation = document.getElementById('result').innerHTML;
     document.getElementById('history').innerHTML = equation;
     let calculate = eval(equation);
-    document.getElementById('result').innerHTML = calculate.toFixed(3);
+    document.getElementById('result').innerHTML = calculate;
 }
 
 function clearAll() {
