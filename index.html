@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- styles area -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="row calculator align-items-center justify-content-center">
+        <div class="col-md-4">
+            <!-- title area -->
+            <h1 class="text-center text-white py-5">Javascript Calculator by Masfik</h1>
+        </div>
+        <div class="col-md-4">
+            <!-- main are -->
+            <main class="bg-white mx-auto p-4">
+                <div class="screen bg-light mx-auto p-3 text-right">
+                    <h4 id="history" class="text-muted">0</h4>
+                    <h2 id="result">0</h2>
+                </div>
+                <div class="keyboard px-3">
+                    <div class="row justify-content-around my-3">
+                        <button id="7" onclick="keyPress('7')" class="key bg-dark">7</button>
+                        <button id="8" onclick="keyPress('8')" class="key bg-dark">8</button>
+                        <button id="9" onclick="keyPress('9')" class="key bg-dark">9</button>
+                        <button onclick="operator('divide')" class="bg-danger">÷</button>
+                    </div>
+                    <div class="row justify-content-around my-3">
+                        <button id="4" onclick="keyPress('4')" class="key bg-dark">4</button>
+                        <button id="5" onclick="keyPress('5')" class="key bg-dark">5</button>
+                        <button id="6" onclick="keyPress('6')" class="key bg-dark">6</button>
+                        <button onclick="operator('multy')" class="bg-danger">×</button>
+                    </div>
+                    <div class="row justify-content-around my-3">
+                        <button id="1" onclick="keyPress('1')" class="key bg-dark">1</button>
+                        <button id="2" onclick="keyPress('2')" class="key bg-dark">2</button>
+                        <button id="3" onclick="keyPress('3')" class="key bg-dark">3</button>
+                        <button onclick="operator('minus')" class="bg-danger">−</button>
+                    </div>
+                    <div class="row justify-content-around my-3">
+                        <button onclick="clearAll()" class="key bg-dark">C</button>
+                        <button id="0" onclick="keyPress('0')" class="key bg-dark">0</button>
+                        <button id="." onclick="keyPress('.')" class="key bg-dark">.</button>
+                        <button onclick="operator('plus')" class="bg-danger">+</button>
+                    </div>
+                    <div class="row justify-content-around my-3">
+                        <button onclick="mainResult()" class="bg-success rounded-pill col-12">=</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- scripts area -->
+    <script src="script.js"></script>
+</body>
+
+</html>
