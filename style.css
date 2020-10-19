@@ -3,10 +3,6 @@ body {
     background-size: cover;
 }
 
-.calculator {
-    margin-top: 100px;
-}
-
 main {
     width: 350px;
     border-radius: 10px;
@@ -34,7 +30,10 @@ h1 {
     filter: drop-shadow(0 0 50px black);
 }
 
-@media (max-width:380px) {
+@media (max-width:570px) {
+    .head-text {
+        font-size: 20px;
+    }
     main {
         width: 250px;
     }
